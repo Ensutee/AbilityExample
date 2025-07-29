@@ -67,7 +67,11 @@ public class SheetDemo : EditorWindow
         
         
         GUILayout.Label("Welcome to my little ability demo. This demo contains functionality from the turn based combat system we developed for the 3 last demos i worked on at PP Game Productions (The Long Night, Njord's Embrace and Laguna. Should you lose this window it can be reopened in the menu point \"CodeExample/ShowWindow\"", textStyle);
-
+        if (GUILayout.Button("Open ReadMe", GUILayout.Width(100)))
+        {
+            Application.OpenURL("https://docs.google.com/document/d/1CqBMz3OrgJhpKMPTL3c5o5w3ovFeNW9l5oHA0rReERI/edit?usp=sharing");
+        }
+        
         
         GUILayout.Space(10);
         
